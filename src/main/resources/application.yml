@@ -1,0 +1,15 @@
+hsm:
+  client:
+    enabled: true
+    provider: UTIMACO
+    load-balancing-type: CLIENT_SIDE
+    max-connections: 4
+    idle-connections : 3
+    nodes:
+      - ip: 127.0.0.1
+        port: 9001
+      - ip: 127.0.0.1
+        port: 9002
+#    key-blocks:
+#      VISA_SBI_CAVV_GEN: "1CDNE000,A54394E92B38A8D2AB4F8BE9F4AD912EFAB8C74D9572F45F,43B72E5D63863631"
+#      BD_HMAC1: "3M2NE000,2475350965B604F3036968682A0AB26F5E68A7E80E4965068B97,B07046C18D9DC3052CC71F178917AE62"
