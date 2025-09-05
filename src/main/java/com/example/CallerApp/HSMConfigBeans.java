@@ -12,13 +12,13 @@ import java.util.Map;
 @Configuration
 public class HSMConfigBeans {
 
-    @Bean
-    @Qualifier("hsmKeyBlocks")
-    public Map<String, String> hsmKeyBlocks() {
-        return Map.of(
-                "SBI_VISA_CAVV_GEN", "1CDNE000dbdbdbd,...",
-                "BD_HMAC1dbdbdb", "3M2NE000,..."
-        );
-    }
+//    @Bean
+//    @Qualifier("hsmKeyBlocks")
+//    public Map<String, String> hsmKeyBlocks() {
+//        return Map.of(
+//                "SBI_VISA_CAVV_GEN", "1CDNE000dbdbdbd,...",
+//                "BD_HMAC1dbdbdb", "3M2NE000,..."
+//        );
+//    }
 
 }
