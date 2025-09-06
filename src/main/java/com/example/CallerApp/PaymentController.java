@@ -18,13 +18,13 @@ public class PaymentController {
     }
 
     @PostMapping("/process")
-    public CompletableFuture<String> processPayment(@RequestBody String panData) throws HSMException {
+    public String processPayment(@RequestBody String panData) {
         return paymentService.processPayment(panData);
     }
 
     @PostMapping("/sign")
-    public CompletableFuture<String> generateSignature(@RequestBody String data) throws HSMException {
-        return paymentService.generateSignature(data);
+    public CompletableFuture<String> generateHmac(@RequestBody String data) {
+        return paymentService.generateHmac(data);
     }
 }
 
